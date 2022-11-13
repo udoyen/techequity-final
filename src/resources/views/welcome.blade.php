@@ -132,7 +132,7 @@
                                 \DB::connection()->getPDO();
                                 echo \DB::connection()->getDatabaseName();
                                 } catch (\Exception $e) {
-                                echo 'None';
+                                echo $e->getMessage();
                             }
                         ?>
                     </div>
